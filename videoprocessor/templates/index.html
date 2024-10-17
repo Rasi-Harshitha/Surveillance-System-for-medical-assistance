@@ -1,0 +1,160 @@
+<!-- <!DOCTYPE html>
+<html>
+<head>
+    <title>Video Processing Result</title>
+</head>
+<body>
+    <h1>Video Upload and Result</h1>
+
+    {% if video_url %}
+    <h2>Uploaded Video:</h2>
+    <video controls>
+        <source src="{{ video_url }}" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+    {% endif %}
+
+    {% if results %}
+    <h2>Prediction Results:</h2>
+    <ul>
+        {% for result in results %}
+        <li>{{ result }}</li>
+        {% endfor %}
+    </ul>
+    {% endif %}
+</body>
+</html>
+ -->
+ {% load static %}
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link rel="stylesheet" type="text/css" href="{% static 'css/styles.css' %}">
+     <title>Video Processing Result</title>
+ </head>
+ <body>
+    <header>
+        <img src="{% static '/images/logo.webp' %}" alt="Logo"> <!-- Replace with the correct logo path -->
+        <center><h1>Surveillance System for Medical Assistance</h1></center>
+        
+    </header>
+ 
+     <h2>Video Upload and Result</h2>
+ 
+     {% if video_url %}
+     <h3>Uploaded Video:</h3>
+     <video controls>
+         <source src="{{ video_url }}" type="video/mp4">
+         Your browser does not support the video tag.
+     </video>
+     {% endif %}
+ 
+     <div class="result-message">
+     {% if results %}
+     <h3>Prediction Results:</h3>
+     <p>{{ results }}</p>
+     {% endif %}
+     </div>
+     <br>
+     <br>
+ </body>
+ </html>
+ 
+{% comment %} <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video Processing Result</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-start; /* Start content from the top */
+            min-height: 100vh; /* Allow the body to expand beyond the viewport */
+        }
+
+        h1 {
+            color: #007bff;
+            margin-bottom: 20px;
+        }
+
+        h2 {
+            color: #0056b3;
+            margin-top: 20px;
+            margin-bottom: 10px;
+        }
+
+        video {
+            width: 80%;
+            max-width: 600px;
+            border: 2px solid #007bff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+        }
+
+        ul {
+            list-style-type: disc;
+            padding-left: 20px;
+        }
+
+        li {
+            background-color: #e9f7fd;
+            border-left: 4px solid #007bff;
+            padding: 10px;
+            margin-bottom: 5px;
+            border-radius: 4px;
+        }
+        .result-message {
+            background-color: #bbdefb; /* Light blue background */
+            border: 2px solid #1e88e5; /* Blue border */
+            border-radius: 8px;
+            padding: 15px;
+            color: #0d47a1; /* Darker blue text */
+            font-weight: bold;
+            font-size: 18px;
+            text-align: center;
+            max-width: 600px;
+            margin-top: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        
+    </style>
+</head>
+<body>
+    <h1>Video Upload and Result</h1>
+
+    {% if video_url %}
+    <h2>Uploaded Video:</h2>
+    <video controls>
+        <source src="{{ video_url }}" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+    {% endif %}
+
+<!--     {% if results %}
+    <h2>Prediction Results:</h2>
+    <ul>
+        {% for result in results %}
+        <li>{{ result }}</li>
+        {% endfor %}
+    </ul>
+    {% endif %} -->
+    <div class="result-message">
+    {% if results %}
+    <h2>Prediction Results:</h2>
+    <p>{{ results }}</p>
+{% endif %}
+    </div>
+</body>
+</html>
+ {% endcomment %}
