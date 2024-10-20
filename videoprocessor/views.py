@@ -15,7 +15,7 @@ def upload_video(request):
         # Process the video
         FrameCapture(os.path.join(settings.MEDIA_ROOT, video.name))
         lst = start_predictions()
-        email='rasiharshitha@gmail.com'
+        email='#########'
         from collections import Counter
         if len(lst)>0:
             c = Counter(lst)
