@@ -20,5 +20,10 @@ Install jupyter lab with python version 3.7
 ```bash
   python manage.py runserver
 ```
-##Demo
+## Demo
+
+https://github.com/user-attachments/assets/36807036-d986-40f5-bd90-c9bcb920644d
+
+
+
 
