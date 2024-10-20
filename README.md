@@ -24,6 +24,18 @@ Install jupyter lab with python version 3.7
 
 https://github.com/user-attachments/assets/36807036-d986-40f5-bd90-c9bcb920644d
 
+## Datasets
+
+Images included in the dataset were collected from various online sources such as 
+Google, and YouTube. The dataset is divided into 80% and 20% for training and 
+testing respectively. The training dataset contains 80 images in each class and the test 
+dataset contains 20 images per class. 
+
+
+
+
+
+
 
 
 
