@@ -51,8 +51,8 @@ def send_mail_Notification(c1, email):
 
     mail_content = f"An unusual incident {c1} is detected in campus and its google map link {url}"
     # The mail addresses and password
-    sender_address = 'gnits586@gmail.com'
-    sender_pass = 'ayql coob mtdw xvzv' # 'bagzgresybtfeqpf'
+    sender_address = '#####'
+    sender_pass = '#######' # 'bagzgresybtfeqpf'
     receiver_address = email
     # Setup the MIME
     message = MIMEMultipart()
